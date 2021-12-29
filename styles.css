@@ -16,22 +16,27 @@
 }
 
 body {
-  padding: 1.25rem;
+  padding: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--main-bg);
-  color: hsl(0, 0%, 100%, 50%);
+  color: var(--soft-blue);
   font-family: "Outfit";
-  font-size: 18px;
+  font-size: 1.25rem;
 }
 
 img {
   max-width: 100%;
+  border-radius: 0.5rem;
 }
 
 .container {
-  padding: 1.25rem;
+  padding: 1.5rem;
   background-color: var(--card-bg);
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .container .equilibrium {
@@ -40,13 +45,14 @@ img {
 
 .container .equilibrium .view {
   position: absolute;
+  border-radius: 0.5rem;
   top: 0;
-  background-color: hsl(178, 100%, 50%, 60%);
+  background-color: hsl(178, 100%, 50%, 50%);
   width: 100%;
   height: calc(100% - 4px);
   z-index: 999;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 
 .container .equilibrium div:hover {
@@ -62,7 +68,8 @@ img {
 }
 
 .container h2 {
-  margin: 1rem.5rem 0.5rem 0;
+  font-size: 1.5rem;
+  margin: 1.5rem 0.5rem 1.5rem 0;
   color: var(--white);
 }
 
@@ -80,9 +87,9 @@ ul {
 }
 
 .container ul {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   display: flex;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 0.1rem solid var(--line);
   align-items: center;
   justify-content: space-between;
 }
@@ -93,7 +100,7 @@ ul {
 }
 
 .container ul li img {
-  margin-right: 0.2rem;
+  margin-right: 0.5rem;
 }
 
 .container ul .ethereum {
@@ -101,16 +108,16 @@ ul {
 }
 
 .container .avatar {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: start;
 }
 
 .container .avatar img {
-  margin-right: 1rem;
-  width: 3.5rem;
-  border: 1px solid var(--white);
+  margin-right: 1.5rem;
+  width: 2.5rem;
+  border: 0.1rem solid var(--white);
   border-radius: 50%;
 }
 
@@ -132,9 +139,9 @@ ul {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 375px) {
   .container {
-    width: 450px;
-    margin: 0 auto 1rem;
+    width: 25rem;
+    margin: 0 auto 1.5rem;
   }
 }
